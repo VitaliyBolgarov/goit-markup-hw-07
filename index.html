@@ -47,7 +47,7 @@
                     </li>
                 </ul>
             </address>
-            <button type="button" class="button-burger">
+            <button type="button" class="button-burger" data-menu-open>
                 <svg width="32" height="22" class="burger">
                     <use href="./images/icons/icons-last.svg#icon-icon-hamburger"></use>
                 </svg>
@@ -55,56 +55,65 @@
 
         </div>
 
-        <div class="mob-menu">
-            <button class="button-close mob-button-close" data-modal-close>
+        <div class="mob-menu is-hidden" data-menu>
+            <button class="button-close mob-button-close" data-menu-close>
                 <svg class="btn-close mob-btn-close">
                     <use href="./images/icons/icons.svg#cross"></use>
                 </svg>
             </button>
-            <ul class="mob-list list">
-                <li class="mob-item">
-                    <a class="header-link mob-link link current" href="./index.html">Studio</a>
-                </li>
-                <li class="mob-item">
-                    <a class="header-link mob-link link" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li class="mob-item">
-                    <a class="header-link mob-link link" href="">Contacts</a>
-                </li>
-            </ul>
-
-            <address class="mob-address address">
-                <ul class="mob-address-list list">
-                    <li class="item"> <a class="mob-contact contact link mob-address-mail"
-                            href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <div>
+                <ul class="mob-list list">
+                    <li class="mob-item">
+                        <a class="header-link mob-link link" href="./index.html">Studio</a>
                     </li>
-                    <li class="item"> <a class="mob-contact contact link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    <li class="mob-item">
+                        <a class="header-link mob-link link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="mob-item">
+                        <a class="header-link mob-link link current" href="">Contacts</a>
                     </li>
                 </ul>
-            </address>
+            </div>
 
-            <ul class="mob-soc-list list">
-                <li class="mob-soc-item"><a href="" class="mob-soc-link link">
-                        <svg width="24" height="24" class="mob-soc-icon">
-                            <use href="./images/icons/icons.svg#icon-instagram"></use>
-                        </svg>
-                    </a></li>
-                <li class="mob-soc-item"><a href="" class="mob-soc-link link">
-                        <svg width="24" height="24" class="mob-soc-icon">
-                            <use href="./images/icons/icons.svg#icon-twitter"></use>
-                        </svg>
-                    </a></li>
-                <li class="mob-soc-item"><a href="" class="mob-soc-link link">
-                        <svg width="24" height="24" class="mob-soc-icon">
-                            <use href="./images/icons/icons.svg#icon-facebook"></use>
-                        </svg>
-                    </a></li>
-                <li class="mob-soc-item"><a href="" class="mob-soc-link link">
-                        <svg width="24" height="24" class="mob-soc-icon">
-                            <use href="./images/icons/icons.svg#icon-linkedin"></use>
-                        </svg>
-                    </a></li>
-            </ul>
+            <div>
+                <address class="mob-address address">
+                    <ul class="mob-address-list address-list list">
+                        <li class="item"> <a class="mob-contact contact link mob-tel" href="tel:+110001111111">+11 (000)
+                                111-11-11</a>
+                        </li>
+                        <li class="item"> <a class="mob-contact contact link mob-address-mail"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+
+                    </ul>
+                </address>
+
+                <ul class="mob-soc-list list">
+                    <li class="mob-soc-item"><a href="" class="mob-soc-link link">
+                            <svg width="24" height="24" class="mob-soc-icon">
+                                <use href="./images/icons/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a></li>
+                    <li class="mob-soc-item"><a href="" class="mob-soc-link link">
+                            <svg width="24" height="24" class="mob-soc-icon">
+                                <use href="./images/icons/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a></li>
+                    <li class="mob-soc-item"><a href="" class="mob-soc-link link">
+                            <svg width="24" height="24" class="mob-soc-icon">
+                                <use href="./images/icons/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li class="mob-soc-item"><a href="" class="mob-soc-link link">
+                            <svg width="24" height="24" class="mob-soc-icon">
+                                <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
+
+
+
         </div>
     </header>
 
@@ -391,7 +400,7 @@
         </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="button-close" data-modal-close>
                 <svg class="btn-close">
@@ -443,9 +452,11 @@
                 <button class="button button-dark" type="submit">Send</button>
             </form>
         </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+
 </body>
 
 </html>
