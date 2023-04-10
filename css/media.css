@@ -240,7 +240,7 @@
 @media screen and (min-width: 1158px) {
     .container {
         width: 1128px;
-        padding: 120px 0;
+        padding: 120px 0 0 0;
     }
 
     .header {
@@ -285,6 +285,9 @@
     }
 
     /**=============FEATURES=================**/
+    .features-item {
+        margin-bottom: 0;
+    }
 
     .features-item {
         flex-basis: calc((100% - 3 * 24px)/4);
@@ -391,6 +394,9 @@
     }
 
     /**============CUSTOMERS==============**/
+    .special-container{
+        padding-bottom: 120px;
+    }
 
     .customers-list {
         gap: 24px;
