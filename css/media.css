@@ -254,10 +254,11 @@
 
     .address-list {
         display: flex;
+        gap: 40px;
     }
 
     .address-list .item+.item {
-        margin-left: 40px;
+        /* margin-left: 40px; */
     }
 
     /**=============HERO=================**/
